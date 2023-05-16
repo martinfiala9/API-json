@@ -44,5 +44,28 @@
     "TA": 2200
    }
   ]
+ },
+ {
+  "FirstName": "Bob",
+  "LastName": "Shmurda",
+  "Email": "bob@shmurda.com",
+  "Age": 22,
+  "MonthlySalary": [
+   {
+    "Basic": 12000,
+    "HRA": 5100,
+    "TA": 2440
+   },
+   {
+    "Basic": 11400,
+    "HRA": 6500,
+    "TA": 3100
+   },
+   {
+    "Basic": 21000,
+    "HRA": 12000,
+    "TA": 3400
+   }
+  ]
  }
 ]

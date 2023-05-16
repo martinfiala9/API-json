@@ -26,13 +26,13 @@ type MonthlySalary struct {
 func main() {
 	jsonFile, err := ioutil.ReadFile("test.json")
 	if err != nil {
-		log.Fatal(err)
+		log.Println("ERROR! Failed to read the file.")
 	}
 
 	var jsonData []Data
 	err = json.Unmarshal(jsonFile, &jsonData)
 	if err != nil {
-		log.Fatal(err)
+		log.Println("ERROR! Failed to unmarshal the file.")
 	}
 
 	r := gin.Default()
@@ -53,6 +53,6 @@ func main() {
 	})
 
 	if err := r.Run(":90"); err != nil {
-		log.Fatal(err)
+		log.Println("ERROR! Failed to load GIN server.")
 	}
 }
